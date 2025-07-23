@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inscrição Enviada</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0c1445;
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #ffce00;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 500px;
+    }
+
+    .spinner {
+      margin-top: 30px;
+      border: 4px solid rgba(255, 255, 255, 0.3);
+      border-top: 4px solid #ffce00;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+  <meta http-equiv="refresh" content="5; url=index.html">
+</head>
+<body>
+  <h1>Inscrição enviada com sucesso!</h1>
+  <p>Obrigado por se inscrever na Seletiva da Inter Academy Campinas. Entraremos em contato pelo WhatsApp e e-mail informados.</p>
+  <div class="spinner"></div>
+  <p style="margin-top: 20px;">Você será redirecionado para a página inicial em alguns segundos...</p>
+</body>
+</html>

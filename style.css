@@ -1,36 +1,21 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* style.css atualizado */
 
-/* Base */
 body {
+  margin: 0;
   font-family: 'Raleway', sans-serif;
-  background-color: #001242;
-  color: #ffffff;
-  scroll-behavior: smooth;
-  line-height: 1.6;
+  background-color: #0b1443;
+  color: #fff;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* Header */
 .topo {
-  background-color: #001242;
-  padding: 1rem 2rem;
+  background-color: #061137;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  padding: 1rem 2rem;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -40,171 +25,193 @@ a {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
-nav a {
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s;
 }
 
-nav a:hover {
-  color: #ffc600;
-}
-
-/* Botão padrão */
 .button {
-  background-color: #ffc600;
-  color: #001242;
-  padding: 10px 20px;
-  border-radius: 6px;
+  background-color: #FFD700;
+  color: #000;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
   font-weight: bold;
-  transition: background 0.3s ease;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  transition: 0.3s;
 }
 
 .button:hover {
-  background-color: #e6b800;
+  background-color: #e4bd00;
 }
 
-/* Hero */
 .hero {
-  background: url('src/inter-milao-comemoracao-champions-e1746567124171.webp') no-repeat center center/cover;
-  min-height: 90vh;
+  background: url('src/bayern-muenchen-v-inter-milan-uefa-champions-league-final-scaled.jpeg') center/cover no-repeat;
+  height: 90vh;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  text-align: center;
-  padding: 3rem 1rem;
 }
 
 .hero-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  border-radius: 10px;
-  max-width: 700px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-texto {
+  color: #fff;
+  text-align: center;
+  padding: 0 2rem;
 }
 
 .hero-texto h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 800;
-  margin-bottom: 1rem;
 }
 
 .hero-texto h2 {
-  font-size: 1.5rem;
-  color: #ffc600;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-.hero-texto p {
-  font-size: 1rem;
-  color: #f2f2f2;
+.sobre, .inscricao, .galeria {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.titulo-secao {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #FFD700;
+  text-align: center;
   margin-bottom: 1.5rem;
 }
 
-/* Seções */
-section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
+.inscricao p,
+.sobre p {
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 2rem;
+  color: #FFD700;
   text-align: center;
 }
 
-section h2 {
-  font-size: 2rem;
-  color: #ffc600;
-  margin-bottom: 1rem;
+ul li strong {
+  color: #fff;
 }
 
-section p {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-}
-
-.sobre ul {
-  list-style: disc;
-  text-align: left;
-  margin: 1rem auto;
-  max-width: 600px;
-  padding-left: 1.2rem;
-}
-
-/* Galeria */
 .galeria-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1rem;
-  margin-top: 2rem;
 }
 
 .galeria-grid img {
   width: 100%;
   height: 200px;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  transition: transform 0.3s;
-}
-
-.galeria-grid img:hover {
-  transform: scale(1.05);
-}
-
-/* Mapa */
-.mapa iframe {
-  width: 100%;
   border-radius: 12px;
-  margin-top: 2rem;
+  display: block;
 }
 
-/* Rodapé */
 .footer {
-  background-color: #000c2d;
-  color: #ccc;
-  padding: 40px 20px;
   text-align: center;
+  padding: 2rem 1rem;
+  background-color: #061137;
+  color: #aaa;
   font-size: 0.9rem;
 }
 
-.footer a {
-  color: #ffc600;
-  text-decoration: none;
+form {
+  background-color: #1c2551;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.footer a:hover {
-  text-decoration: underline;
+form label {
+  color: #fff;
+  font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+}
+
+form button[type="submit"] {
+  background-color: #FFD700;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button[type="submit"]:hover {
+  background-color: #e4bd00;
+}
+
+/* Centralizar títulos das seções */
+.inscricao h2,
+.galeria h2,
+.dados-seletiva {
+  text-align: center;
+}
+
+/* Centralizar lista dos dados da seletiva */
+.dados-seletiva ul {
+  display: inline-block;
+  text-align: left;
 }
 
 /* Responsivo */
-@media (max-width: 768px) {
-  .header-actions {
+@media (max-width: 600px) {
+  .header-actions nav ul {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  .hero-texto h1 {
-    font-size: 2rem;
-  }
-
-  .hero-texto h2 {
-    font-size: 1.2rem;
   }
 
   .button {
-    padding: 8px 16px;
-    font-size: 0.95rem;
+    margin-top: 1rem;
+  }
+
+  form {
+    padding: 1rem;
   }
 }
