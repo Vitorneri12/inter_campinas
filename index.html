@@ -11,20 +11,25 @@
 <body>
 
   <!-- HEADER -->
-  <header class="topo">
-    <img src="src/football-club-internazionale-milano.png" alt="Logo Inter Academy" class="logo" />
-    <div class="header-actions">
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#inscricao">Inscrição</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-      <a href="#inscricao" class="button">Inscreva-se</a>
-    </div>
-  </header>
+ <header class="topo">
+  <img src="src/football-club-internazionale-milano.png" alt="Logo Inter Academy" class="logo" />
+  
+  <div class="header-actions">
+    <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('show')">☰</button>
+
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#inscricao">Inscrição</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    
+    <a href="#inscricao" class="button">Inscreva-se</a>
+  </div>
+</header>
+
 
   <!-- HERO -->
   <section class="hero">
@@ -67,7 +72,7 @@
     <p>Preencha o formulário até o dia 25/08 e participe da seletiva!</p>
     <form action="https://formsubmit.co/vitor.neri@texantech.com.br" method="POST">
   <!-- redireciona para uma página de obrigado -->
-  <input type="hidden" name="_next" value="https://interacademycampinas.com.br/obrigado.html">
+  <input type="hidden" name="_next" value="https://vitorneri12.github.io/inter_campinas/">
   <input type="hidden" name="_captcha" value="false">
 
   <label for="nome">Nome Completo:</label>
