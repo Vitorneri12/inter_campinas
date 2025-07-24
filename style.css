@@ -1,6 +1,4 @@
 
-/* style.css atualizado e responsivo */
-
 * {
   box-sizing: border-box;
 }
@@ -10,6 +8,7 @@ body {
   font-family: 'Raleway', sans-serif;
   background-color: #0b1443;
   color: #fff;
+  font-size: 18px;
 }
 
 .topo {
@@ -53,6 +52,7 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .button {
@@ -63,6 +63,7 @@ nav ul li a {
   font-weight: bold;
   text-decoration: none;
   transition: 0.3s;
+  font-size: 1.1rem;
 }
 
 .button:hover {
@@ -126,27 +127,27 @@ nav.mobile-visible {
 }
 
 .hero-texto h1 {
-  font-size: 5rem;
+  font-size: 5.5rem;
   font-weight: 900;
   color: #ffffff;
   margin-bottom: 0;
 }
 
 .hero-texto h2 {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: 700;
   margin: 1.2rem 0 0.5rem;
 }
 
 .hero-texto p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   max-width: 600px;
   margin-bottom: 1rem;
   line-height: 1.6;
 }
 
 .hero-texto em {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   opacity: 0.85;
 }
 
@@ -161,7 +162,7 @@ nav.mobile-visible {
 }
 
 .titulo-secao {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 800;
   color: #FFD700;
   text-align: center;
@@ -173,12 +174,14 @@ nav.mobile-visible {
   text-align: center;
   margin-bottom: 1rem;
   line-height: 1.6;
+  font-size: 1.15rem;
 }
 
 ul {
   list-style: disc;
   padding-left: 2rem;
   color: #FFD700;
+  font-size: 1.15rem;
 }
 
 ul li strong {
@@ -203,7 +206,7 @@ ul li strong {
   padding: 2rem 1rem;
   background-color: #061137;
   color: #aaa;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 form {
@@ -220,6 +223,7 @@ form {
 form label {
   color: #fff;
   font-weight: 600;
+  font-size: 1.1rem;
 }
 
 form input[type="text"],
@@ -228,7 +232,7 @@ form input[type="email"] {
   border-radius: 6px;
   border: none;
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 form button[type="submit"] {
@@ -237,7 +241,7 @@ form button[type="submit"] {
   border: none;
   padding: 0.9rem;
   border-radius: 6px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
