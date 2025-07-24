@@ -1,4 +1,9 @@
+
 /* style.css atualizado e responsivo */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -112,19 +117,41 @@ nav.mobile-visible {
 
 .hero-texto {
   color: #fff;
-  padding: 0 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
 }
 
 .hero-texto h1 {
-  font-size: 2.4rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
+  font-size: 5rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 0;
 }
 
 .hero-texto h2 {
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1.2rem 0 0.5rem;
+}
+
+.hero-texto p {
+  font-size: 1rem;
+  max-width: 600px;
   margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.hero-texto em {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.hero-texto .button {
+  margin-top: 1rem;
 }
 
 .sobre, .inscricao, .galeria {
@@ -181,9 +208,9 @@ ul li strong {
 
 form {
   background-color: #1c2551;
-  padding: 2rem;
+  padding: 2rem 1.2rem;
   border-radius: 12px;
-  max-width: 600px;
+  max-width: 100%;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
@@ -205,11 +232,12 @@ form input[type="email"] {
 }
 
 form button[type="submit"] {
+  width: 100%;
   background-color: #FFD700;
   border: none;
-  padding: 0.8rem;
+  padding: 0.9rem;
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
@@ -249,5 +277,6 @@ form button[type="submit"]:hover {
 
   form {
     padding: 1rem;
+    max-width: 100%;
   }
 }
